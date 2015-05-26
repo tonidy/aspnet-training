@@ -13,5 +13,10 @@ namespace SiRePa.Controllers
         {
             return View();
         }
+
+        public ActionResult Exist()
+        {
+            return View();
+        }
     }
 }
