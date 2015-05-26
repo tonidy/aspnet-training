@@ -53,5 +53,11 @@ namespace SiRePa.Controllers
 
             return View(model);
         }
+
+        public ActionResult Layout()
+        {
+            return View();
+        }
+
     }
 }

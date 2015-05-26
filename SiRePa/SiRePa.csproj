@@ -239,6 +239,8 @@
     <Content Include="Views\Test\PassToController.cshtml" />
     <Content Include="Views\Test\PassToControllerResult.cshtml" />
     <Content Include="Views\Shared\_TestPartialView.cshtml" />
+    <Content Include="Views\Shared\_LayoutWithoutHeader.cshtml" />
+    <Content Include="Views\Test\Layout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
