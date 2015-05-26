@@ -16,7 +16,7 @@ namespace SiRePa.Controllers
 
         public ActionResult Json()
         {
-            return Json(new { data = "ini json" });
+            return Json(new { data = "ini json" }, JsonRequestBehavior.AllowGet);
         }
 
     }
