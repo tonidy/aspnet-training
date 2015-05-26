@@ -178,6 +178,7 @@
     <Compile Include="Models\Patient.cs">
       <DependentUpon>TestModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\PatientCreateViewModel.cs" />
     <Compile Include="Models\TestModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

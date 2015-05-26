@@ -46,8 +46,14 @@ namespace SiRePa.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Name,Address")] Patient patient)
+        public ActionResult Create(PatientCreateViewModel viewModel)
         {
+            var patient = new Patient
+            {
+                Name = viewModel.Name,
+                Address = viewModel.Address
+            };
+
             if (ModelState.IsValid)
             {
                 db.Patients.Add(patient);
