@@ -30,5 +30,28 @@ namespace SiRePa.Controllers
 
             return View(model);
         }
+
+        public ActionResult PassToController()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult PassToController(FormCollection form)
+        {
+            var name = form.GetValue("name").AttemptedValue;
+            return RedirectToAction("PassToControllerResult", new { param = name });
+        }
+
+        public ActionResult PassToControllerResult(string param)
+        {
+            var model = new TestModel
+            {
+                ID = 2,
+                Name = param
+            };
+
+            return View(model);
+        }
     }
 }
