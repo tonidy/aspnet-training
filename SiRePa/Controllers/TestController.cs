@@ -13,5 +13,11 @@ namespace SiRePa.Controllers
         {
             return Content("Hai Cantik!");
         }
+
+        public ActionResult Json()
+        {
+            return Json(new { data = "ini json" });
+        }
+
     }
 }
