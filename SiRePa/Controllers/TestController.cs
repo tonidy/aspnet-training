@@ -8,6 +8,7 @@ namespace SiRePa.Controllers
 {
     public class TestController : Controller
     {
+        [Authorize]
         public ActionResult Index()
         {
             return Content("Hai Cantik!");
