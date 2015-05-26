@@ -1,0 +1,32 @@
+﻿@model SiRePa.Models.TestModel
+
+@{
+    ViewBag.Title = "PassToView";
+}
+
+<h2>PassToView</h2>
+
+<div>
+    <h4>TestModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ID)
+        </dd>
+
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+</div>
